@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — FitFairy</title>
+<meta name="description" content="How FitFairy collects, uses, stores, and deletes your data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p class="crumb"><a href="/">FitFairy</a> · Privacy Policy</p>
+<h1>Privacy Policy</h1>
+<p class="meta">Effective September 18, 2026</p>
+
+<p>FitFairy lets you see yourself wearing outfits from posts and screenshots you share with the app.
+To do that it has to handle a photo of you, which is about as personal as data gets. This policy
+explains, in plain language, what we collect, why, where it goes, how long we keep it, and how you
+delete it. When we say "we" or "FitFairy" we mean the operator of the FitFairy app, reachable at
+<a href="mailto:support@fitfairy.net">support@fitfairy.net</a>.</p>
+
+<h2>The short version</h2>
+<ul>
+  <li>Your <strong>body photo</strong> lives on your device. We keep <strong>one private copy on our
+    servers</strong> so outfits you share can be generated while the app is closed. It is deleted
+    when you replace it, delete it, or delete your account, and automatically if you go about 90 days
+    without generating anything.</li>
+  <li>Outfit images, generated try-ons, and Fit Check videos are stored <strong>privately, only for
+    you</strong>, and are deleted when you delete the fit (fully purged within 30 days).</li>
+  <li>We <strong>never store the source video</strong> from a post you share, only its link and
+    thumbnail.</li>
+  <li>We use AI providers to generate images and videos. Your photo is sent to them for processing
+    and is <strong>not used to train their models</strong> under our agreements with them.</li>
+  <li>We <strong>do not sell your data</strong> and we <strong>do not run ads or advertising
+    trackers</strong>.</li>
+  <li>You can <strong>delete your account and all of its data</strong> from inside the app, any time.</li>
+</ul>
+
+<h2>1. What we collect and why</h2>
+
+<h3>Your body photo</h3>
+<p>During setup you take or choose a full-body photo. It is the reference for every try-on: the AI
+uses it to render <em>you</em> in the outfit. The photo is stored on your device as the primary
+copy. We also keep exactly one private copy per account on our servers (see section 3), because
+the "share from TikTok and it's ready when you open the app" feature has to run while the app is
+closed, and it cannot do that without access to your photo. That server copy also lets us restore
+your photo to a new device when you sign in with Apple, so you don't have to retake it. This means
+access to your photo is protected by the security of your Apple ID.</p>
+
+<h3>Outfit images you share or upload</h3>
+<p>When you share a post link, we fetch that post's public thumbnail. When you share or upload a
+screenshot, we use the screenshot. Either way the outfit image is stored privately with the
+resulting fit so the app can show it on your card. A screenshot captures your whole screen, so it
+may incidentally include other content on your device; you choose what to share.</p>
+
+<h3>The link to the source post</h3>
+<p>We store the URL of the post you shared so you can tap back to it and so the original creator
+stays credited. We do not download, store, or process the video itself.</p>
+
+<h3>Generated try-ons and Fit Check videos</h3>
+<p>The images and short videos the AI produces are stored privately in your account and cached on
+your device. They are yours to save, share, or delete.</p>
+
+<h3>Account information</h3>
+<p>The app creates an anonymous account for you on first launch, identified by a random ID, no
+email required. If you choose <strong>Sign in with Apple</strong> (for example to start a free trial
+or to keep your fits across devices), Apple gives us a stable identifier and, if you allow it, your
+name and email or a private relay address. We also keep an Apple sign-in token for the lifetime of
+your account, used only to revoke our access to your Apple ID when you delete your account, as Apple
+requires.</p>
+
+<h3>Purchases</h3>
+<p>Subscriptions and add-on packs are bought through Apple. We do not see your card number. We
+receive purchase records (product, price, currency, country, and store transaction identifiers) via
+our subscription provider so we can unlock what you paid for and keep your balances correct.</p>
+
+<h3>Usage information</h3>
+<p>We record basic events about how the app is used (for example: app opened, setup completed, a fit
+was added and from which kind of source, a result was viewed or saved, a Fit Check was started).
+These are stored in our own database under your account ID and are used to understand what's
+working and to fix problems. We do not use third-party analytics or advertising SDKs.</p>
+
+<h3>Device and diagnostic information</h3>
+<p>If you tap <em>Report a Problem</em>, the app pre-fills an email with your app version and device
+model so support can help faster; you see and control everything before it is sent. If you enable
+notifications, we store a push token so we can tell you when a try-on is ready.</p>
+
+<h3>Clipboard</h3>
+<p>When you open the Add Fit screen, the app may check your clipboard <em>on your device</em> for a
+TikTok link so it can offer to use it. Links from other platforms are recognised only to tell you
+they aren't supported. Nothing from your clipboard is stored unless you confirm.</p>
+
+<h2>2. How we use your information</h2>
+<ul>
+  <li>To generate try-on images and Fit Check videos you request.</li>
+  <li>To run background generation for posts you share while the app is closed.</li>
+  <li>To keep your fits, balances, and subscription state in sync with your account.</li>
+  <li>To notify you when a result is ready (only if you opt in).</li>
+  <li>To prevent abuse, enforce usage limits, and keep the service secure.</li>
+  <li>To answer support requests.</li>
+  <li>To understand aggregate usage and improve the app.</li>
+</ul>
+<p>We do not sell personal information, and we do not use your photos or results for advertising,
+for marketing to others, or to train AI models.</p>
+
+<h2>3. Where your data goes (service providers)</h2>
+<p>We use a small number of providers to run FitFairy. Each receives only what it needs for its
+job.</p>
+<table>
+  <thead><tr><th>Provider</th><th>What it does</th><th>What it receives</th></tr></thead>
+  <tbody>
+    <tr><td>Supabase</td><td>Hosts our database, file storage, authentication, and server code</td>
+        <td>Everything listed in section 1, stored with row-level access controls so only your
+        account can read your rows and files</td></tr>
+    <tr><td>Google (Gemini API)</td><td>Generates the try-on image</td>
+        <td>Your body photo and the outfit image, per request. Not used to train Google's models
+        under the paid API terms; retained briefly for abuse monitoring (see section 4)</td></tr>
+    <tr><td>fal.ai</td><td>Generates the Fit Check video from your try-on image</td>
+        <td>The generated try-on image, per request. We instruct fal.ai not to retain inputs and
+        outputs and to expire its temporary delivery copy within one hour</td></tr>
+    <tr><td>RevenueCat</td><td>Validates App Store purchases and manages subscription state</td>
+        <td>Your account ID and Apple purchase records. No card details</td></tr>
+    <tr><td>Apple</td><td>Payments, Sign in with Apple, push notification delivery</td>
+        <td>Governed by Apple's own privacy policy</td></tr>
+    <tr><td>Expo</td><td>Routes push notifications to your device</td>
+        <td>Your push token and the notification text ("Your fit is ready")</td></tr>
+    <tr><td>Discord</td><td>Delivers operational alerts to the FitFairy team</td>
+        <td>Automated messages about system problems (for example a failed deletion step). These
+        can include your random account ID, never your photos, name, or email</td></tr>
+  </tbody>
+</table>
+<p>Our servers are hosted in the United States. If you use FitFairy from elsewhere, your data is
+transferred to and processed there.</p>
+
+<h2>4. How long we keep things</h2>
+<table>
+  <thead><tr><th>Data</th><th>Kept until</th></tr></thead>
+  <tbody>
+    <tr><td>Body photo (server copy)</td><td>You replace it, delete it, or delete your account.
+        Also deleted automatically after about 90 days with no generations. The copy on your device
+        is under your control at all times</td></tr>
+    <tr><td>Outfit images, try-ons, Fit Check videos</td><td>You delete the fit. Deleted fits are
+        fully purged from our servers within 30 days</td></tr>
+    <tr><td>Source post links</td><td>You delete the fit</td></tr>
+    <tr><td>Account, balances, usage events, push token</td><td>You delete your account</td></tr>
+    <tr><td>Apple sign-in token</td><td>You delete your account (it is used to revoke Apple access
+        during deletion, then removed)</td></tr>
+    <tr><td>Purchase records</td><td>Your account's records are removed when you delete your
+        account. Our provider's processing log is pruned after 90 days. Apple keeps its own
+        transaction history under its policies</td></tr>
+    <tr><td>Data sent to AI providers</td><td>Google retains prompts and responses briefly for
+        abuse monitoring, for which we have selected the shortest window Google offers (currently
+        7 days). fal.ai is instructed not to retain inputs or outputs; its temporary delivery copy of
+        a video expires within one hour</td></tr>
+  </tbody>
+</table>
+
+<h2>5. Deleting your data</h2>
+<p><strong>Delete a fit:</strong> removes its outfit image, try-on, and video from your device
+immediately and from our servers within 30 days.</p>
+<p><strong>Replace your body photo:</strong> Profile → Update your photo. The old copy is deleted from
+your device and our servers at the same time. To remove your photo entirely, delete your account.</p>
+<p><strong>Delete your account:</strong> Settings → Delete Account. This permanently deletes your
+account, every fit, your body photo, your balances, and your usage data from our servers, revokes
+our Sign in with Apple access, and clears the app's data on your device. It cannot be undone.</p>
+<p><strong>Important:</strong> deleting your account does <em>not</em> cancel an active subscription.
+Subscriptions are managed by Apple; cancel in iOS Settings → your name → Subscriptions, or we will
+be unable to stop the renewal for you.</p>
+
+<h2>6. Security</h2>
+<p>All traffic uses TLS. Files are stored in private buckets, encrypted at rest, and served only
+through short-lived signed links scoped to your account. Database access is restricted by row-level
+security so one user can never read another's rows. AI provider keys live only on our servers,
+never in the app. Because the AI models need to see your photo to generate a result, we cannot
+offer end-to-end encryption; "encrypted at rest" here means platform-level encryption on our
+provider's storage.</p>
+
+<h2>7. Your rights</h2>
+<p>Depending on where you live, you may have rights to access, correct, delete, or export your
+personal information, or to object to certain processing. Most of these you can exercise directly
+in the app (viewing your fits, deleting fits, deleting your account). For anything else, email
+<a href="mailto:support@fitfairy.net">support@fitfairy.net</a> and we will respond within 30 days.
+We do not sell or share personal information for cross-context behavioral advertising, and we do
+not discriminate against you for exercising your rights.</p>
+
+<h2>8. Children</h2>
+<p>FitFairy is not intended for anyone under 13, and we do not knowingly collect information from
+children under 13. If you believe a child under 13 has provided us with a photo or other personal
+information, email us and we will delete it.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If we make material changes, we will update the date at the top and let you know in the app
+before the change takes effect. Continued use after that date means you accept the updated policy.</p>
+
+<h2>10. Contact</h2>
+<p>Questions or requests: <a href="mailto:support@fitfairy.net">support@fitfairy.net</a>.</p>
+
+<p class="foot"><a href="/terms">Terms of Use</a> · <a href="/">fitfairy.net</a></p>
+</main>
+</body>
+</html>

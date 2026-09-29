@@ -11,7 +11,7 @@
 <main>
 <p class="crumb"><a href="/">FitFairy</a> · Privacy Policy</p>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective September 18, 2026</p>
+<p class="meta">Effective September 29, 2026</p>
 
 <p>FitFairy lets you see yourself wearing outfits from posts and screenshots you share with the app.
 To do that it has to handle a photo of you, which is about as personal as data gets. This policy
@@ -24,7 +24,8 @@ delete it. When we say "we" or "FitFairy" we mean the operator of the FitFairy a
   <li>Your <strong>body photo</strong> lives on your device. We keep <strong>one private copy on our
     servers</strong> so outfits you share can be generated while the app is closed. It is deleted
     when you replace it, delete it, or delete your account, and automatically if you go about 90 days
-    without generating anything.</li>
+    without generating anything. Screen replays we use to fix problems can also show it (see
+    section 1).</li>
   <li>Outfit images, generated try-ons, and Fit Check videos are stored <strong>privately, only for
     you</strong>, and are deleted when you delete the fit (fully purged within 30 days).</li>
   <li>We <strong>never store the source video</strong> from a post you share, only its link and
@@ -78,9 +79,22 @@ our subscription provider so we can unlock what you paid for and keep your balan
 <p>We record basic events about how the app is used (for example: app opened, setup completed, a fit
 was added and from which kind of source, a result was viewed or saved, a Fit Check was started).
 These are stored in our own database under your account ID and are used to understand what's
-working and to fix problems. We do not use third-party analytics or advertising SDKs.</p>
+working and to fix problems. We do not use third-party analytics or advertising SDKs. (We do use
+Sentry for crash and error reporting, described below.)</p>
 
 <h3>Device and diagnostic information</h3>
+<p>When the app crashes, hits an error, or runs slowly, it sends a diagnostic report to our
+crash-reporting provider, Sentry, so we can find and fix the problem. A report includes the technical
+error details, your device model and iOS version, the app version, how long screens took to load,
+the screens you visited just before the problem, and your random account ID so we can tell
+whether one person or many are affected. Sentry also records an approximate location (city and
+country) derived from your internet connection. Reports do not include your name, email, or IP
+address.
+For some sessions, including those where an error occurred, Sentry also records a low-detail replay
+of the app's screens so we can see what went wrong the way you saw it. <strong>Replays show the
+screen as it appeared, which can include your body photo, outfit images, try-ons, and Fit Check
+videos.</strong> Only the FitFairy team can view them, and they are deleted automatically within 90
+days (see section 4).</p>
 <p>If you tap <em>Report a Problem</em>, the app pre-fills an email with your app version and device
 model so support can help faster; you see and control everything before it is sent. If you enable
 notifications, we store a push token so we can tell you when a try-on is ready.</p>
@@ -124,6 +138,11 @@ job.</p>
         <td>Governed by Apple's own privacy policy</td></tr>
     <tr><td>Expo</td><td>Routes push notifications to your device</td>
         <td>Your push token and the notification text ("Your fit is ready")</td></tr>
+    <tr><td>Sentry</td><td>Crash, error, and performance reporting</td>
+        <td>The diagnostic reports described in section 1: error details, device model, iOS and app
+        version, screen load times, recent screens, screen replays (which can show your photos,
+        try-ons, and videos as they appeared on screen), approximate location (city and country),
+        and your random account ID. Never your name, email, or IP address</td></tr>
     <tr><td>Discord</td><td>Delivers operational alerts to the FitFairy team</td>
         <td>Automated messages about system problems (for example a failed deletion step). These
         can include your random account ID, never your photos, name, or email</td></tr>
@@ -152,6 +171,7 @@ transferred to and processed there.</p>
         abuse monitoring, for which we have selected the shortest window Google offers (currently
         7 days). fal.ai is instructed not to retain inputs or outputs; its temporary delivery copy of
         a video expires within one hour</td></tr>
+    <tr><td>Crash reports and screen replays (Sentry)</td><td>Deleted automatically within 90 days</td></tr>
   </tbody>
 </table>
 
@@ -162,7 +182,9 @@ immediately and from our servers within 30 days.</p>
 your device and our servers at the same time. To remove your photo entirely, delete your account.</p>
 <p><strong>Delete your account:</strong> Settings → Delete Account. This permanently deletes your
 account, every fit, your body photo, your balances, and your usage data from our servers, revokes
-our Sign in with Apple access, and clears the app's data on your device. It cannot be undone.</p>
+our Sign in with Apple access, and clears the app's data on your device. It cannot be undone.
+Crash reports and screen replays already sent to Sentry are not deleted immediately; they are
+deleted automatically within 90 days (see section 4). Email us if you want them removed sooner.</p>
 <p><strong>Important:</strong> deleting your account does <em>not</em> cancel an active subscription.
 Subscriptions are managed by Apple; cancel in iOS Settings → your name → Subscriptions, or we will
 be unable to stop the renewal for you.</p>

@@ -95,6 +95,7 @@ th { color: var(--muted); font-weight: 600; }
 
 .hand { font-family: var(--hand); color: var(--lav-deep); font-size: 1rem; line-height: 1.15; }
 .doodle {
+  overflow: visible;
   fill: none; stroke: var(--lav-deep); stroke-width: 1.8;
   stroke-linecap: round; stroke-linejoin: round;
 }
@@ -116,7 +117,7 @@ th { color: var(--muted); font-weight: 600; }
 }
 .store-badge svg { width: 26px; height: 26px; flex: none; }
 .store-badge small { display: block; font-size: 0.64rem; font-weight: 500; opacity: 0.8; letter-spacing: 0.02em; }
-.store-badge--sm { background: var(--lav); font-size: 0.9rem; padding: 7px 14px 7px 11px; border-radius: 12px; gap: 7px; }
+.store-badge--sm { font-size: 0.9rem; padding: 7px 14px 7px 11px; border-radius: 12px; gap: 7px; }
 .store-badge--sm svg { width: 18px; height: 18px; }
 .store-badge--sm small { font-size: 0.56rem; }
 

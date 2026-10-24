@@ -8,91 +8,94 @@
 <meta name="theme-color" content="#FBFAF7">
 <link rel="canonical" href="https://fitfairy.net/">
 
-<!-- Open Graph / Twitter.
-     og:image is a PLACEHOLDER PATH: assets/og-image.png does not exist yet.
-     Add a 1200×630 PNG/JPG at /assets/og-image.png before sharing links widely. -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FitFairy">
 <meta property="og:url" content="https://fitfairy.net/">
 <meta property="og:title" content="FitFairy — See yourself in any outfit">
 <meta property="og:description" content="Screenshot an outfit, share it to FitFairy, and see yourself wearing it before you buy.">
-<meta property="og:image" content="https://fitfairy.net/assets/og-image.png">
+<meta property="og:image" content="https://fitfairy.net/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="FitFairy: an outfit screenshot, your photo, and you wearing the outfit.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="FitFairy — See yourself in any outfit">
 <meta name="twitter:description" content="Screenshot an outfit, share it to FitFairy, and see yourself wearing it before you buy.">
-<meta name="twitter:image" content="https://fitfairy.net/assets/og-image.png">
+<meta name="twitter:image" content="https://fitfairy.net/assets/og-image.jpg">
 
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body class="home">
 
-<!--
-  IMAGE PLACEHOLDERS
-  Every <div class="ph"> below is a visible placeholder. To swap one for a real image,
-  replace the whole <div class="ph ...">…</div> with the <img> shown in the comment above it
-  and drop the file into /assets/. Use real FitFairy output only; never mock or stock results.
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+  <symbol id="heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 20s-7-4.4-7-9.6A4 4 0 0 1 12 8a4 4 0 0 1 7 2.4C19 15.6 12 20 12 20z"/></symbol>
+</svg>
 
-  Filename                         Size (px, portrait 3:4 unless noted)
-  assets/hero-outfit.jpg           900×1200   outfit screenshot (TikTok/Pinterest/shop)
-  assets/hero-you.jpg              900×1200   full-body photo of the model/user
-  assets/hero-result.jpg           900×1200   FitFairy try-on result of the two above
-  assets/example-1-outfit.jpg      900×1200   example 1, outfit screenshot
-  assets/example-1-result.jpg      900×1200   example 1, FitFairy try-on result
-  assets/example-2-outfit.jpg      900×1200
-  assets/example-2-result.jpg      900×1200
-  assets/example-3-outfit.jpg      900×1200
-  assets/example-3-result.jpg      900×1200
-  assets/og-image.png              1200×630 (landscape) social share card
+<!--
+  APP STORE BADGES: three copies (nav, hero, final CTA), all "coming soon" (not links).
+  When the app is live, turn each <span class="store-badge …">…</span> into a link, e.g.
+    <a class="store-badge" href="https://apps.apple.com/app/idYOUR_APP_ID"> …same inner markup, with
+    "Coming soon to the" changed to "Download on the"… </a>
+  or swap in Apple's official badge artwork (developer.apple.com/app-store/marketing/guidelines/).
 -->
 
 <!-- 1. HERO -->
 <header class="hero-wrap">
-  <div class="shell">
+  <nav class="topbar shell" aria-label="Main">
     <a class="wordmark" href="/" aria-label="FitFairy home">Fit<span>Fairy</span></a>
-
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">AI try-on for iPhone</p>
-        <h1>See yourself in <em>any</em> outfit.</h1>
-        <p class="lede">Found an outfit you love online? Screenshot it, share it to FitFairy, and see yourself wearing it before you buy.</p>
-
-        <!--
-          APP STORE BADGE: currently "coming soon" (not a link).
-          When the app is live, replace this whole <span class="store-badge">…</span> with:
-            <a class="store-badge is-live" href="https://apps.apple.com/app/idYOUR_APP_ID">
-              <img src="assets/app-store-badge.svg" width="150" height="50" alt="Download on the App Store">
-            </a>
-          (Official badge artwork: https://developer.apple.com/app-store/marketing/guidelines/)
-        -->
-        <span class="store-badge" role="note">
-          <span class="store-badge__dot" aria-hidden="true"></span>
-          <span><small>Coming soon to the</small>App Store</span>
-        </span>
-      </div>
-
-      <figure class="flow" aria-label="An outfit screenshot plus your photo becomes a photo of you wearing the outfit">
-        <div class="flow__item">
-          <!-- <img class="flow__img" src="assets/hero-outfit.jpg" width="900" height="1200" alt="Outfit screenshot from social media"> -->
-          <div class="ph ph--a"><span>PLACEHOLDER</span>Outfit screenshot<br><code>hero-outfit.jpg</code></div>
-          <figcaption>The outfit</figcaption>
-        </div>
-        <span class="flow__op" aria-hidden="true">+</span>
-        <div class="flow__item">
-          <!-- <img class="flow__img" src="assets/hero-you.jpg" width="900" height="1200" alt="Full-body photo"> -->
-          <div class="ph ph--b"><span>PLACEHOLDER</span>Your photo<br><code>hero-you.jpg</code></div>
-          <figcaption>Your photo</figcaption>
-        </div>
-        <span class="flow__op" aria-hidden="true">=</span>
-        <div class="flow__item flow__item--result">
-          <!-- <img class="flow__img" src="assets/hero-result.jpg" width="900" height="1200" alt="FitFairy try-on result"> -->
-          <div class="ph ph--c"><span>PLACEHOLDER</span>Replace with real FitFairy try-on result<br><code>hero-result.jpg</code></div>
-          <figcaption>You, in it ✦</figcaption>
-        </div>
-      </figure>
+    <div class="topbar__links">
+      <a href="#how">How it works</a>
+      <a href="#examples">Examples</a>
+      <a href="mailto:support@fitfairy.net">Support</a>
     </div>
+    <span class="store-badge store-badge--sm" role="note">
+      <svg aria-hidden="true"><use href="#apple"/></svg>
+      <span><small>Coming soon to the</small>App Store</span>
+    </span>
+  </nav>
+
+  <div class="shell hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">AI try-on for iPhone</p>
+      <h1>See yourself in <em>any</em> outfit.</h1>
+      <p class="lede">Found an outfit you love online? Screenshot it, share it to FitFairy, and see yourself wearing it before you buy.</p>
+      <span class="store-badge" role="note">
+        <svg aria-hidden="true"><use href="#apple"/></svg>
+        <span><small>Coming soon to the</small>App Store</span>
+      </span>
+    </div>
+
+    <figure class="flow" aria-label="An outfit screenshot plus your photo becomes a photo of you wearing the outfit">
+      <svg class="doodle doodle--loop" viewBox="0 0 120 50" aria-hidden="true"><path d="M6 44C20 10 70 0 108 22m0 0-12-2m12 2-6 11"/></svg>
+      <div class="card card--tilt-l">
+        <div class="card__media">
+          <img src="assets/hero-outfit.jpg" width="768" height="1024" alt="Outfit screenshot: cream cardigan and lavender pleated skirt">
+          <svg class="card__heart" aria-hidden="true"><use href="#heart"/></svg>
+        </div>
+        <p class="card__cap">Outfit screenshot</p>
+        <i class="card__lines" aria-hidden="true"></i>
+      </div>
+      <span class="flow__op" aria-hidden="true">+</span>
+      <div class="card">
+        <div class="card__media">
+          <img src="assets/hero-you.jpg" width="768" height="1024" alt="Full-body photo of a woman in a white tank top and jeans">
+        </div>
+        <p class="card__cap">Your photo</p>
+        <i class="card__lines" aria-hidden="true"></i>
+      </div>
+      <span class="flow__op" aria-hidden="true">=</span>
+      <div class="card card--result">
+        <div class="card__media">
+          <img src="assets/hero-result.jpg" width="768" height="1024" alt="The same woman wearing the cream cardigan and lavender skirt">
+          <span class="ai-tag">AI</span>
+        </div>
+      </div>
+      <figcaption class="flow__notes" aria-hidden="true">
+        <span class="hand n1"><svg class="doodle" viewBox="0 0 30 30"><path d="M22 6C8 6 4 18 10 26m0 0 1-9m-1 9-8-4"/></svg>The outfit</span>
+        <span class="hand n2">Your photo<svg class="doodle" viewBox="0 0 30 30"><path d="M4 24c14 2 22-6 20-18m0 0-6 7m6-7 4 8"/></svg></span>
+        <span class="hand n3">You, in it<svg class="doodle" viewBox="0 0 30 30"><path d="M4 24c14 2 22-6 20-18m0 0-6 7m6-7 4 8"/></svg></span>
+      </figcaption>
+    </figure>
   </div>
 </header>
 
@@ -102,58 +105,97 @@
     <div class="shell">
       <p class="eyebrow">How it works</p>
       <h2 id="how-title">Three taps from <em>screenshot</em> to <em>on you</em>.</h2>
+      <svg class="doodle doodle--spark" viewBox="0 0 30 30" aria-hidden="true"><path d="M6 14 2 6m12 4V1m8 13 7-6"/></svg>
       <ol class="steps">
         <li class="step">
           <span class="step__num">1</span>
           <svg class="step__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="17" r="7"/><path d="M11 41c1.5-8 6.5-12 13-12s11.5 4 13 12"/></svg>
-          <p>Add a photo of yourself.</p>
+          <h3>Add a photo of yourself.</h3>
+          <p>Use a clear, full-body or upper-body photo.</p>
         </li>
         <li class="step">
           <span class="step__num">2</span>
-          <svg class="step__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="5" width="22" height="38" rx="5"/><path d="M24 30V16m-6 6 6-6 6 6"/></svg>
-          <p>Screenshot an outfit you love and share it to FitFairy.</p>
+          <svg class="step__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M16 22h-3v20h22V22h-3M24 30V6m-7 7 7-7 7 7"/></svg>
+          <h3>Screenshot an outfit you love and share it to FitFairy.</h3>
+          <p>From any online store, social media, or anywhere on the web.</p>
         </li>
         <li class="step">
           <span class="step__num">3</span>
           <svg class="step__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40s-14-8.5-14-19a8 8 0 0 1 14-5.3A8 8 0 0 1 38 21c0 10.5-14 19-14 19z"/></svg>
-          <p>See yourself wearing it and save your favorite looks.</p>
+          <h3>See yourself wearing it and save your favorite looks.</h3>
+          <p>Get a realistic try-on and build your dream wardrobe.</p>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- 3. REAL TRY-ON EXAMPLES (use only genuine FitFairy output) -->
+  <!-- 3. REAL TRY-ON EXAMPLES -->
   <section class="section section--tint" id="examples" aria-labelledby="examples-title">
     <div class="shell">
-      <p class="eyebrow">Real try-on examples</p>
-      <h2 id="examples-title">Before. <em>After.</em></h2>
-      <div class="examples">
+      <div class="examples__head">
+        <div>
+          <p class="eyebrow">Real try-on examples</p>
+          <h2 id="examples-title">Before. <em>After.</em></h2>
+        </div>
+        <div class="carousel-nav">
+          <button type="button" data-dir="-1" aria-label="Previous example">&#8249;</button>
+          <button type="button" data-dir="1" aria-label="Next example">&#8250;</button>
+        </div>
+      </div>
+      <div class="examples" id="examples-track">
         <figure class="example">
           <div class="example__pair">
-            <!-- <img src="assets/example-1-outfit.jpg" width="900" height="1200" alt="Outfit screenshot"> -->
-            <div class="ph ph--a"><span>PLACEHOLDER</span>Outfit<br><code>example-1-outfit.jpg</code></div>
-            <!-- <img src="assets/example-1-result.jpg" width="900" height="1200" alt="FitFairy try-on result"> -->
-            <div class="ph ph--c"><span>PLACEHOLDER</span>Replace with real FitFairy try-on result<br><code>example-1-result.jpg</code></div>
+            <div class="card card--flat">
+              <div class="card__media">
+                <img src="assets/example-1-outfit.jpg" width="768" height="1024" loading="lazy" alt="Black off-shoulder top and black pleated skirt">
+                <svg class="card__heart" aria-hidden="true"><use href="#heart"/></svg>
+              </div>
+              <p class="card__cap">Outfit screenshot</p>
+            </div>
+            <div class="card card--flat card--photo">
+              <div class="card__media">
+                <img src="assets/example-1-result.jpg" width="768" height="1024" loading="lazy" alt="Woman wearing the black top and pleated skirt">
+                <span class="ai-tag">AI</span>
+              </div>
+            </div>
           </div>
-          <figcaption><span>Screenshot</span><span>On you</span></figcaption>
+          <figcaption><span>Screenshot</span><span class="on">On you</span></figcaption>
         </figure>
         <figure class="example">
           <div class="example__pair">
-            <!-- <img src="assets/example-2-outfit.jpg" width="900" height="1200" alt="Outfit screenshot"> -->
-            <div class="ph ph--b"><span>PLACEHOLDER</span>Outfit<br><code>example-2-outfit.jpg</code></div>
-            <!-- <img src="assets/example-2-result.jpg" width="900" height="1200" alt="FitFairy try-on result"> -->
-            <div class="ph ph--c"><span>PLACEHOLDER</span>Replace with real FitFairy try-on result<br><code>example-2-result.jpg</code></div>
+            <div class="card card--flat">
+              <div class="card__media">
+                <img src="assets/example-2-outfit.jpg" width="768" height="1024" loading="lazy" alt="Cream floral mini sundress">
+                <svg class="card__heart" aria-hidden="true"><use href="#heart"/></svg>
+              </div>
+              <p class="card__cap">Outfit screenshot</p>
+            </div>
+            <div class="card card--flat card--photo">
+              <div class="card__media">
+                <img src="assets/example-2-result.jpg" width="768" height="1024" loading="lazy" alt="Woman wearing the floral sundress">
+                <span class="ai-tag">AI</span>
+              </div>
+            </div>
           </div>
-          <figcaption><span>Screenshot</span><span>On you</span></figcaption>
+          <figcaption><span>Screenshot</span><span class="on">On you</span></figcaption>
         </figure>
         <figure class="example">
           <div class="example__pair">
-            <!-- <img src="assets/example-3-outfit.jpg" width="900" height="1200" alt="Outfit screenshot"> -->
-            <div class="ph ph--a"><span>PLACEHOLDER</span>Outfit<br><code>example-3-outfit.jpg</code></div>
-            <!-- <img src="assets/example-3-result.jpg" width="900" height="1200" alt="FitFairy try-on result"> -->
-            <div class="ph ph--c"><span>PLACEHOLDER</span>Replace with real FitFairy try-on result<br><code>example-3-result.jpg</code></div>
+            <div class="card card--flat">
+              <div class="card__media">
+                <img src="assets/example-3-outfit.jpg" width="768" height="1024" loading="lazy" alt="Beige blazer, white tee and light jeans">
+                <svg class="card__heart" aria-hidden="true"><use href="#heart"/></svg>
+              </div>
+              <p class="card__cap">Outfit screenshot</p>
+            </div>
+            <div class="card card--flat card--photo">
+              <div class="card__media">
+                <img src="assets/example-3-result.jpg" width="768" height="1024" loading="lazy" alt="Woman wearing the beige blazer and jeans">
+                <span class="ai-tag">AI</span>
+              </div>
+            </div>
           </div>
-          <figcaption><span>Screenshot</span><span>On you</span></figcaption>
+          <figcaption><span>Screenshot</span><span class="on">On you</span></figcaption>
         </figure>
       </div>
     </div>
@@ -161,12 +203,19 @@
 
   <!-- 4. FINAL CTA -->
   <section class="section cta" aria-labelledby="cta-title">
-    <div class="shell">
+    <div class="shell cta__inner">
+      <div class="polaroid polaroid--l" aria-hidden="true">
+        <img src="assets/example-2-result.jpg" width="768" height="1024" loading="lazy" alt="">
+        <span class="hand">Same you.<br>More looks. ♡</span>
+      </div>
+      <div class="polaroid polaroid--r" aria-hidden="true">
+        <img src="assets/example-1-result.jpg" width="768" height="1024" loading="lazy" alt="">
+        <span class="hand">Dream it.<br>Try it.<br>Wear it. ♡</span>
+      </div>
       <h2 id="cta-title">Your saved outfits. <em>On you.</em></h2>
       <p class="lede">FitFairy is coming to iPhone.</p>
-      <!-- APP STORE BADGE (second copy): swap the same way as the hero badge above. -->
       <span class="store-badge" role="note">
-        <span class="store-badge__dot" aria-hidden="true"></span>
+        <svg aria-hidden="true"><use href="#apple"/></svg>
         <span><small>Coming soon to the</small>App Store</span>
       </span>
     </div>
@@ -185,5 +234,18 @@
   </div>
 </footer>
 
+<script>
+  (function () {
+    var track = document.getElementById('examples-track');
+    var nav = document.querySelector('.carousel-nav');
+    function sync() { nav.hidden = track.scrollWidth <= track.clientWidth + 4; }
+    nav.addEventListener('click', function (e) {
+      var b = e.target.closest('button');
+      if (b) track.scrollBy({ left: b.dataset.dir * track.clientWidth * 0.85, behavior: 'smooth' });
+    });
+    addEventListener('resize', sync);
+    sync();
+  })();
+</script>
 </body>
 </html>

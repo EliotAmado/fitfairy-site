@@ -11,7 +11,7 @@
 <main>
 <p class="crumb"><a href="/">FitFairy</a> · Privacy Policy</p>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective October 30, 2026</p>
+<p class="meta">Effective November 11, 2026</p>
 
 <p>FitFairy lets you see yourself wearing outfits from posts and screenshots you share with the app.
 To do that it has to handle a photo of you, which is about as personal as data gets. This policy
@@ -26,12 +26,20 @@ delete it. When we say "we" or "FitFairy" we mean the operator of the FitFairy a
     when you replace it, delete it, or delete your account, and automatically if you go about 90 days
     without generating anything. Screen replays we use to fix problems can also show it (see
     section 1).</li>
-  <li>Outfit images, generated try-ons, and Fit Check videos are stored <strong>privately, only for
+  <li>Outfit images and generated try-ons are stored <strong>privately, only for
     you</strong>, and are deleted when you delete the fit (fully purged within 30 days).</li>
+  <li>Clothing you save to <strong>Mix</strong> is backed up <strong>privately to your account</strong>
+    so it comes back if you reinstall the app or move to a new device, and is deleted from our
+    servers when you delete it.</li>
+  <li><strong>Find Similar</strong> sends the clothing photo you choose to search to a search
+    provider, SerpApi, which runs the search on Google. It <strong>never sends your body photo or
+    your try-ons</strong>. Your searches are stored privately in your account until you delete them.</li>
   <li>We <strong>never store the source video</strong> from a post you share, only its link and
     thumbnail.</li>
-  <li>We use AI providers to generate images and videos. Your photo is sent to them for processing
-    and is <strong>not used to train their models</strong> under our agreements with them.</li>
+  <li>We use a third-party AI provider, Google, to generate try-on images (it receives your
+    <strong>body photo</strong> and the outfit) and to recognize the clothing in photos you search.
+    What we send is processed only to give you the result and is <strong>not used to train its
+    models</strong> under our agreement with it.</li>
   <li>We <strong>do not sell your data</strong> and we <strong>do not run ads or advertising
     trackers</strong>.</li>
   <li>You can <strong>delete your account and all of its data</strong> from inside the app, any time.</li>
@@ -56,14 +64,39 @@ stored privately with the
 resulting fit so the app can show it on your card. A screenshot captures your whole screen, so it
 may incidentally include other content on your device; you choose what to share.</p>
 
+<h3>Clothing you save to Mix</h3>
+<p>Mix lets you save clothing images (from a share, a link, or an upload) and combine them into an
+outfit to try on. Each saved piece is a resized copy of the image, the clothing type you picked,
+whether you favorited it, and the link it came from, if any. These are stored on your device and
+backed up privately to your account so your Mix comes back after a reinstall or on a new device
+when you sign in. When you try on a Mix outfit, its pieces are sent to the AI provider the same way
+an outfit image is, and the fit keeps its own copy of them.</p>
+
+<h3>Find Similar searches</h3>
+<p>Find Similar looks for clothing like a piece in a photo, with prices from online stores. You
+start a search from an image you share or upload, from a fit's original outfit image, or from a
+Mix piece. It never uses your body photo or a try-on. To run a search, we send the photo to our AI
+provider to identify the clothing in it, then send the photo and a short text description of the
+piece (for example "beige knit hoodie") to SerpApi, which runs Google Lens and Google Shopping
+searches. The AI provider also compares the public product photos in the results with your photo
+to drop poor matches. We store the searched photo, the clothing found in it, the results (product
+names, prices, store names, and links), which results you favorite, and the link the photo came
+from, if any, privately in your account, so you can reopen a search without running it again.</p>
+
 <h3>The link to the source post</h3>
 <p>We store the URL of the page you shared (with tracking tags removed) so you can tap back to it
 and so the original creator stays credited. We do not download, store, or process the video
 itself.</p>
 
-<h3>Generated try-ons and Fit Check videos</h3>
-<p>The images and short videos the AI produces are stored privately in your account and cached on
-your device. They are yours to save, share, or delete.</p>
+<h3>Generated try-ons</h3>
+<p>The images the AI produces are stored privately in your account and cached on
+your device. They are yours to save, share, or delete. Which fits you've marked as favorites is
+stored with them, so your favorites come back if you reinstall the app.</p>
+
+<h3>Collections</h3>
+<p>If you group fits into collections, we store each collection's name and which of your fits are
+in it, privately in your account, so your collections come back if you reinstall the app or sign in
+on a new phone.</p>
 
 <h3>Account information</h3>
 <p>The app creates an anonymous account for you on first launch, identified by a random ID, no
@@ -80,7 +113,7 @@ our subscription provider so we can unlock what you paid for and keep your balan
 
 <h3>Usage information</h3>
 <p>We record basic events about how the app is used (for example: app opened, setup completed, a fit
-was added and from which kind of source, a result was viewed or saved, a Fit Check was started, and
+was added and from which kind of source, a result was viewed or saved, and
 for a link you share, the website's name (for example zara.com, never the full address), whether
 we found an outfit image on it, and how long that took),
 plus your answers to onboarding questions such as what styles you shop for and how you heard about
@@ -99,8 +132,7 @@ country) derived from your internet connection. Reports do not include your name
 address.
 For some sessions, including those where an error occurred, Sentry also records a low-detail replay
 of the app's screens so we can see what went wrong the way you saw it. <strong>Replays show the
-screen as it appeared, which can include your body photo, outfit images, try-ons, and Fit Check
-videos.</strong> Only the FitFairy team can view them, and they are deleted automatically within 90
+screen as it appeared, which can include your body photo, outfit images, and try-ons.</strong> Only the FitFairy team can view them, and they are deleted automatically within 90
 days (see section 4).</p>
 <p>If you tap <em>Report a Problem</em>, the app pre-fills an email with your app version and device
 model so support can help faster; you see and control everything before it is sent. If you enable
@@ -112,7 +144,8 @@ screen, and only to find a link in it. Nothing else from your clipboard is used 
 
 <h2>2. How we use your information</h2>
 <ul>
-  <li>To generate try-on images and Fit Check videos you request.</li>
+  <li>To generate the try-on images you request.</li>
+  <li>To run the Find Similar searches you request.</li>
   <li>To run background generation for posts you share while the app is closed.</li>
   <li>To keep your fits, balances, and subscription state in sync with your account.</li>
   <li>To notify you when a result is ready (only if you opt in).</li>
@@ -132,22 +165,27 @@ job.</p>
     <tr><td>Supabase</td><td>Hosts our database, file storage, authentication, and server code</td>
         <td>Everything listed in section 1, stored with row-level access controls so only your
         account can read your rows and files</td></tr>
-    <tr><td>Google (Gemini API)</td><td>Generates the try-on image</td>
-        <td>Your body photo and the outfit image, per request. Not used to train Google's models
-        under the paid API terms; retained briefly for abuse monitoring (see section 4)</td></tr>
-    <tr><td>fal.ai</td><td>Generates the Fit Check video from your try-on image</td>
-        <td>The generated try-on image, per request. We instruct fal.ai not to retain inputs and
-        outputs and to expire its temporary delivery copy within one hour</td></tr>
+    <tr><td>Google (Gemini API)</td><td>Generates the try-on image; identifies the clothing in a
+        Find Similar photo and checks which results match it</td>
+        <td>For a try-on: your body photo and the outfit image (or a Mix outfit's pieces), per
+        request. For Find Similar: the photo you search and public product photos from the results,
+        never your body photo. Not used to train Google's models under the paid API terms; retained
+        briefly for abuse monitoring (see section 4)</td></tr>
+    <tr><td>SerpApi</td><td>Runs Find Similar's Google Lens and Google Shopping searches</td>
+        <td>The photo you search and a short text description of the clothing in it. Never your body
+        photo, your try-ons, or your account details. SerpApi passes them to Google to run the
+        search</td></tr>
     <tr><td>RevenueCat</td><td>Validates App Store purchases and manages subscription state</td>
         <td>Your account ID and Apple purchase records. No card details</td></tr>
     <tr><td>Apple</td><td>Payments, Sign in with Apple, push notification delivery</td>
         <td>Governed by Apple's own privacy policy</td></tr>
     <tr><td>Expo</td><td>Routes push notifications to your device</td>
-        <td>Your push token and the notification text ("Your fit is ready")</td></tr>
+        <td>Your push token and the notification text ("Your fit is ready", "Similar items
+        found")</td></tr>
     <tr><td>Sentry</td><td>Crash, error, and performance reporting</td>
         <td>The diagnostic reports described in section 1: error details, device model, iOS and app
         version, screen load times, recent screens, screen replays (which can show your photos,
-        try-ons, and videos as they appeared on screen), approximate location (city and country),
+        and try-ons as they appeared on screen), approximate location (city and country),
         and your random account ID. Never your name, email, or IP address</td></tr>
     <tr><td>Discord</td><td>Delivers operational alerts to the FitFairy team</td>
         <td>Automated messages about system problems (for example a failed deletion step). These
@@ -164,9 +202,15 @@ transferred to and processed there.</p>
     <tr><td>Body photo (server copy)</td><td>You replace it, delete it, or delete your account.
         Also deleted automatically after about 90 days with no generations. The copy on your device
         is under your control at all times</td></tr>
-    <tr><td>Outfit images, try-ons, Fit Check videos</td><td>You delete the fit. Deleted fits are
+    <tr><td>Outfit images and try-ons</td><td>You delete the fit. Deleted fits are
         fully purged from our servers within 30 days</td></tr>
     <tr><td>Source post links</td><td>You delete the fit</td></tr>
+    <tr><td>Mix pieces (images, clothing type, link)</td><td>You delete the piece from Mix, or delete
+        your account. Deleted from our servers the next time the app is online</td></tr>
+    <tr><td>Collections (name and which fits are in it)</td><td>You delete the collection, or delete
+        your account. Deleted from our servers the next time the app is online</td></tr>
+    <tr><td>Find Similar searches (photo, results, favorites, link)</td><td>You delete the search, or
+        delete your account</td></tr>
     <tr><td>Account, balances, usage events, push token</td><td>You delete your account</td></tr>
     <tr><td>Apple sign-in token</td><td>You delete your account (it is used to revoke Apple access
         during deletion, then removed)</td></tr>
@@ -175,19 +219,22 @@ transferred to and processed there.</p>
         transaction history under its policies</td></tr>
     <tr><td>Data sent to AI providers</td><td>Google retains prompts and responses briefly for
         abuse monitoring, for which we have selected the shortest window Google offers (currently
-        7 days). fal.ai is instructed not to retain inputs or outputs; its temporary delivery copy of
-        a video expires within one hour</td></tr>
+        7 days)</td></tr>
+    <tr><td>Data sent to SerpApi</td><td>Handled by SerpApi and Google under their own privacy
+        policies</td></tr>
     <tr><td>Crash reports and screen replays (Sentry)</td><td>Deleted automatically within 90 days</td></tr>
   </tbody>
 </table>
 
 <h2>5. Deleting your data</h2>
-<p><strong>Delete a fit:</strong> removes its outfit image, try-on, and video from your device
+<p><strong>Delete a fit:</strong> removes its outfit image and try-on from your device
 immediately and from our servers within 30 days.</p>
+<p><strong>Delete a search:</strong> in Finds, removes its photo and results from your device and
+our servers.</p>
 <p><strong>Replace your body photo:</strong> Profile → Update your photo. The old copy is deleted from
 your device and our servers at the same time. To remove your photo entirely, delete your account.</p>
 <p><strong>Delete your account:</strong> Settings → Delete Account. This permanently deletes your
-account, every fit, your body photo, your balances, and your usage data from our servers, revokes
+account, every fit, your collections, your Mix pieces, your Find Similar searches, your body photo, your balances, and your usage data from our servers, revokes
 our Sign in with Apple access, and clears the app's data on your device. It cannot be undone.
 Crash reports and screen replays already sent to Sentry are not deleted immediately; they are
 deleted automatically within 90 days (see section 4). Email us if you want them removed sooner.</p>

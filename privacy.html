@@ -24,8 +24,7 @@ delete it. When we say "we" or "FitFairy" we mean the operator of the FitFairy a
   <li>Your <strong>body photo</strong> lives on your device. We keep <strong>one private copy on our
     servers</strong> so outfits you share can be generated while the app is closed. It is deleted
     when you replace it, delete it, or delete your account, and automatically if you go about 90 days
-    without generating anything. Screen replays we use to fix problems can also show it (see
-    section 1).</li>
+    without generating anything.</li>
   <li>Outfit images and generated try-ons are stored <strong>privately, only for
     you</strong>, and are deleted when you delete the fit (fully purged within 30 days).</li>
   <li>Clothing you save to <strong>Mix</strong> is backed up <strong>privately to your account</strong>
@@ -42,7 +41,9 @@ delete it. When we say "we" or "FitFairy" we mean the operator of the FitFairy a
     models</strong> under our agreement with it.</li>
   <li>We <strong>do not sell your data</strong> and we <strong>do not run ads or advertising
     trackers</strong>.</li>
-  <li>You can <strong>delete your account and all of its data</strong> from inside the app, any time.</li>
+  <li>You can <strong>delete your account and its data</strong> from inside the app, any time. We
+    keep only a record of which packs were already paid out, no longer tied to your account
+    (section 4).</li>
 </ul>
 
 <h2>1. What we collect and why</h2>
@@ -129,11 +130,8 @@ error details, your device model and iOS version, the app version, how long scre
 the screens you visited just before the problem, and your random account ID so we can tell
 whether one person or many are affected. Sentry also records an approximate location (city and
 country) derived from your internet connection. Reports do not include your name, email, or IP
-address.
-For some sessions, including those where an error occurred, Sentry also records a low-detail replay
-of the app's screens so we can see what went wrong the way you saw it. <strong>Replays show the
-screen as it appeared, which can include your body photo, outfit images, and try-ons.</strong> Only the FitFairy team can view them, and they are deleted automatically within 90
-days (see section 4).</p>
+address, and they do not include your photos or try-ons. Only the FitFairy team can view them, and
+they are deleted automatically within 90 days (see section 4).</p>
 <p>If you tap <em>Report a Problem</em>, the app pre-fills an email with your app version and device
 model so support can help faster; you see and control everything before it is sent. If you enable
 notifications, we store a push token so we can tell you when a try-on is ready.</p>
@@ -184,9 +182,8 @@ job.</p>
         found")</td></tr>
     <tr><td>Sentry</td><td>Crash, error, and performance reporting</td>
         <td>The diagnostic reports described in section 1: error details, device model, iOS and app
-        version, screen load times, recent screens, screen replays (which can show your photos,
-        and try-ons as they appeared on screen), approximate location (city and country),
-        and your random account ID. Never your name, email, or IP address</td></tr>
+        version, screen load times, recent screens, approximate location (city and country),
+        and your random account ID. Never your name, email, IP address, photos, or try-ons</td></tr>
     <tr><td>Discord</td><td>Delivers operational alerts to the FitFairy team</td>
         <td>Automated messages about system problems (for example a failed deletion step). These
         can include your random account ID, never your photos, name, or email</td></tr>
@@ -214,15 +211,16 @@ transferred to and processed there.</p>
     <tr><td>Account, balances, usage events, push token</td><td>You delete your account</td></tr>
     <tr><td>Apple sign-in token</td><td>You delete your account (it is used to revoke Apple access
         during deletion, then removed)</td></tr>
-    <tr><td>Purchase records</td><td>Your account's records are removed when you delete your
-        account. Our provider's processing log is pruned after 90 days. Apple keeps its own
-        transaction history under its policies</td></tr>
+    <tr><td>Purchase records</td><td>When you delete your account, they are no longer tied to your
+        account. We keep only each pack's Apple transaction number, what it added, and when it was
+        credited or refunded, so the same purchase can't be credited twice. Our provider's processing log is pruned after 90 days. Apple keeps
+        its own transaction history under its policies</td></tr>
     <tr><td>Data sent to AI providers</td><td>Google retains prompts and responses briefly for
         abuse monitoring, for which we have selected the shortest window Google offers (currently
         7 days)</td></tr>
     <tr><td>Data sent to SerpApi</td><td>Handled by SerpApi and Google under their own privacy
         policies</td></tr>
-    <tr><td>Crash reports and screen replays (Sentry)</td><td>Deleted automatically within 90 days</td></tr>
+    <tr><td>Crash and error reports (Sentry)</td><td>Deleted automatically within 90 days</td></tr>
   </tbody>
 </table>
 
@@ -236,7 +234,7 @@ your device and our servers at the same time. To remove your photo entirely, del
 <p><strong>Delete your account:</strong> Settings → Delete Account. This permanently deletes your
 account, every fit, your collections, your Mix pieces, your Find Similar searches, your body photo, your balances, and your usage data from our servers, revokes
 our Sign in with Apple access, and clears the app's data on your device. It cannot be undone.
-Crash reports and screen replays already sent to Sentry are not deleted immediately; they are
+Crash and error reports already sent to Sentry are not deleted immediately; they are
 deleted automatically within 90 days (see section 4). Email us if you want them removed sooner.</p>
 <p><strong>Important:</strong> deleting your account does <em>not</em> cancel an active subscription.
 Subscriptions are managed by Apple; cancel in iOS Settings → your name → Subscriptions, or we will
